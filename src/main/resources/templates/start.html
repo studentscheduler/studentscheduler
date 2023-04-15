@@ -2,9 +2,64 @@
 <html>
 <head>
 <meta charset="UTF-8"/>
-<title>Student Scheduler Sample Page</title>
+<title>Student Scheduler</title>
+<style>
+	body{
+  		font-family: Arial, sans-serif;
+	}
+	.form-popup{
+	  display: none;
+	  position: fixed;
+	  bottom: 0;
+	  right: 15px;
+	  border: 3px solid #f1f1f1;
+	  z-index: 9;
+	}
+</style>
+
 </head>
 <body>
-Welcome to Student Scheduler!
+	<h1>Student Scheduler</h1>
+	
+	<button class="open-button" onclick="openForm()">Add Meeting</button>
+
+	<div class="form-popup" id="myForm">
+	  <form action="/action_page.php" class="form-container">
+	    <h1>New Meeting</h1>
+	
+	    <label for="title"><b>Title</b></label>
+	    <input type="text" placeholder="" name="title" required>
+	
+	    <label for="time"><b>Time</b></label>
+	    <select name="time">
+		  <option>12:00 AM</option>
+		  <option>12:30 AM</option>
+		</select>
+		
+		<label for="duration"><b>Duration</b></label>
+	    <select name="duration">
+		  <option>30 minutes</option>
+		  <option>1 hour</option>
+		</select>
+	    
+	    <label for="location"><b>Location</b></label>
+	    <input type="text" placeholder="" name="location" required>
+	    
+  		<label for="reminder"> I would like a reminder about this meeting</label>
+  		<input type="checkbox" id="reminder" name="reminder">
+	
+	    <button type="submit" class="btn">Add Meeting</button>
+	    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+	  </form>
+	</div>
+	<script>
+		function openForm() {
+		  document.getElementById("myForm").style.display = "block";
+		}
+	
+		function closeForm() {
+		  document.getElementById("myForm").style.display = "none";
+		}
+	</script>
 </body>
 </html>
