@@ -11,4 +11,8 @@ public class StudentScheduleraController {
 		return "start";
 	}
 	
+	@RequestMapping("/meeting")
+	public String meeting() {
+		return "meeting";
+	}
 }

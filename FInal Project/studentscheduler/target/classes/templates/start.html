@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <title>Student Scheduler</title>
+<!--form css-->
 <style>
 	body{
   		font-family: Arial, sans-serif;
@@ -20,11 +21,11 @@
 </head>
 <body>
 	<h1>Student Scheduler</h1>
-	
+	<!--add meeting button-->
 	<button class="open-button" onclick="openForm()">Add Meeting</button>
-
+	<!--form opens when button is clicked-->
 	<div class="form-popup" id="myForm">
-	  <form action="action_page.php" class="form-container" method="post">
+	  <form action="meeting" class="form-container" method="post">
 	    <h1>New Meeting</h1>
 	
 	    <label for="title"><b>Title</b></label>
@@ -45,14 +46,17 @@
 	    
   		<label for="reminder"> I would like a reminder about this meeting</label>
   		<input type="checkbox" id="reminder" name="reminder">
-	
-	    <button type="submit" class="btn">Add Meeting</button>
+		
+		<!--submitting form redirects to confirmation page-->
+	    <button type="submit" class="btn" onclick="window.location.href='localhost:8080/meeting';">Add Meeting</button>
 	    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 	  </form>
 	</div>
 	<div id="meetings"></div>
 	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+	<!--adding form submissions to database-->
 	<script>
 		function openForm() {
 		  document.getElementById("myForm").style.display = "block";
@@ -64,7 +68,7 @@
 		
 		$(document).ready(function() {
 			$.ajax({
-				url: "/start",
+				url: "/meetings",
 				type: "GET",
 				dataType: "json",
 				success: function(data) {
