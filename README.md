@@ -1,7 +1,5 @@
 # Student Scheduler
 
-# System Overview
-
 This system would have a calendar where students can click on specific dates and schedule
 meetings, reminders and deadlines on it. It will have a login/Sign up feature because students
 need to have specific accounts to work.
