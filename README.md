@@ -1,9 +1,22 @@
 # Student Scheduler
 
-To run this project, right click on the StudentSchedulerApplication file 
+# System Overview
 
-![student scheduler application](https://user-images.githubusercontent.com/69601432/230938135-171bc5d5-f8cb-4777-8840-8cea834d4868.PNG)
+This system would have a calendar where students can click on specific dates and schedule
+meetings, reminders and deadlines on it. It will have a login/Sign up feature because students
+need to have specific accounts to work.
 
-Hover over Run As, and run as Java Application
+# Functional Requirements
+As, I want, so that I can
 
-<img width="864" alt="how to run spring boot project" src="https://user-images.githubusercontent.com/69601432/230939066-438a8847-6ef5-46ef-9e7b-e7d705efb338.png">
+● As a User, I want to be able to schedule a meeting , so that I manage my time well
+● As a User, I want to be able to set reminders, so i can get notifications when it is time for my meetings
+
+#Team Roles
+
+Product Owner:, Hansbauer Mitchell
+Business Logic and Persistence: Poudyel Tara
+UI: Corin Manning, Modupeoluwa Daniel
+
+
+![MicrosoftTeams-image (1)](https://user-images.githubusercontent.com/69601432/232344178-e177fe1b-bdb1-4793-b015-3253ff868f93.png)
