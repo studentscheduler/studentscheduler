@@ -17,4 +17,5 @@ Business Logic and Persistence: Poudyel Tara </br>
 UI: Corin Manning, Modupeoluwa Daniel </br>
 
 
-![MicrosoftTeams-image (1)](https://user-images.githubusercontent.com/69601432/232344178-e177fe1b-bdb1-4793-b015-3253ff868f93.png)
+
+![MicrosoftTeams-image (1)](https://user-images.githubusercontent.com/69601432/232344301-6cfdf644-6b14-4b48-9de9-d3449c849651.png)
